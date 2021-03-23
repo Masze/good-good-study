@@ -1,0 +1,15 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      value-serializer: "org.apache.kafka.common.serialization.StringSerializer"
+      key-serializer: "org.apache.kafka.common.serialization.StringSerializer"
+      buffer-memory: 1351322
+      batch-size: 16384
+    consumer:
+      auto-offset-reset:  "earliest"
+      enable-auto-commit: true
+      auto-commit-interval: 200
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      group-id: "wj-test"
