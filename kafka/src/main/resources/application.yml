@@ -7,7 +7,7 @@ spring:
       buffer-memory: 1351322
       batch-size: 16384
     consumer:
-      auto-offset-reset:  "earliest"
+      auto-offset-reset: earliest
       enable-auto-commit: true
       auto-commit-interval: 200
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer

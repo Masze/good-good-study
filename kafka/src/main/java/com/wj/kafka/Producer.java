@@ -7,14 +7,14 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-    public class Producer {
+public class Producer {
 
-        @Autowired
-        private KafkaTemplate kafkaTemplate;
+    @Autowired
+    private KafkaTemplate kafkaTemplate;
 
-        @GetMapping("send/{msg}")
-        public void send(@PathVariable String msg) {
-            kafkaTemplate.send("someTopic", msg);
-        }
-
+    @GetMapping("send/{msg}")
+    public void send(@PathVariable String msg) {
+        kafkaTemplate.send("someTopic", msg);
     }
+
+}

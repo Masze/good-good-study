@@ -5,13 +5,13 @@ import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Component;
 
 @Component
-    public  class KafKaConfig {
+public class KafKaConfig {
 
-        private final KafkaTemplate kafkaTemplate;
+    private final KafkaTemplate kafkaTemplate;
 
-        @Autowired
-        public KafKaConfig(KafkaTemplate kafkaTemplate) {
-            this.kafkaTemplate = kafkaTemplate;
-        }
-
+    @Autowired
+    public KafKaConfig(KafkaTemplate kafkaTemplate) {
+        this.kafkaTemplate = kafkaTemplate;
     }
+
+}
