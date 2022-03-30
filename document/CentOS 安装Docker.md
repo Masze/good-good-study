@@ -21,7 +21,7 @@ $ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/do
 
 ###  安装docker-ce
 
-最新版本的** Docker Engine-Community**和**containerd**
+最新版本的** Docker Engine-Community **和**containerd**
 
 ```sh
 $ sudo yum install docker-ce docker-ce-cli containerd.io
