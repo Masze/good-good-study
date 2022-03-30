@@ -17,7 +17,7 @@ docker rmi java:8
 docker rmi -f java:8
 ```
 
-- 删除所有没有引用的镜像
+- 删除所有未引用的镜像
 
 ```bash
 docker rmi `docker images | grep none | awk '{print $3}'`
